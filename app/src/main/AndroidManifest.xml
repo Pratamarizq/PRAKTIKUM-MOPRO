@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.restaurant.rizki">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Rizki Restaurant"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.restaurant.rizki.DashboardActivity" />
+        <activity android:name="com.restaurant.rizki.ProfileActivity" />
+        <activity android:name="com.restaurant.rizki.ChangePasswordActivity" />
+        <activity android:name="com.restaurant.rizki.auth.RegisterActivity" />
+        <activity android:name="com.restaurant.rizki.auth.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
